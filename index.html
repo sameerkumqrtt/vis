@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for genuine icon matching -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="instagram-layout">
+        <!-- Left Sidebar Navigation -->
+        <nav class="left-sidebar">
+            <div class="logo-container">
+                <h1 class="instagram-logo">Instagram</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                <li><a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a></li>
+                <li><a href="#" class="nav-item"><i class="fa-regular fa-compass"></i><span>Explore</span></a></li>
+                <li><a href="#" class="nav-item"><i class="fa-solid fa-clapperboard"></i><span>Reels</span></a></li>
+                <li><a href="#" class="nav-item"><i class="fa-regular fa-message"></i><span>Messages</span></a></li>
+                <li><a href="#" class="nav-item"><i class="fa-regular fa-heart"></i><span>Notifications</span></a></li>
+                <li><a href="#" class="nav-item"><i class="fa-regular fa-square-plus"></i><span>Create</span></a></li>
+                <li><a href="#" class="nav-item profile-link">
+                    <img src="https://picsum.photos/seed/myprofile/40" alt="Profile"><span>Profile</span>
+                </a></li>
+            </ul>
+            <div class="nav-bottom">
+                <a href="#" class="nav-item"><i class="fa-solid fa-bars"></i><span>More</span></a>
+            </div>
+        </nav>
+
+        <!-- Main Feed Container -->
+        <main class="feed-container">
+            <!-- Stories Bar -->
+            <div class="stories-bar">
+                <div class="story-circle">
+                    <div class="gradient-ring"><img src="https://picsum.photos/seed/user1/60" alt="User"></div>
+                    <span>johndoe</span>
+                </div>
+                <div class="story-circle">
+                    <div class="gradient-ring"><img src="https://picsum.photos/seed/user2/60" alt="User"></div>
+                    <span>janedoe</span>
+                </div>
+                <div class="story-circle">
+                    <div class="gradient-ring"><img src="https://picsum.photos/seed/user3/60" alt="User"></div>
+                    <span>code_wizard</span>
+                </div>
+                <div class="story-circle">
+                    <div class="gradient-ring"><img src="https://picsum.photos/seed/user4/60" alt="User"></div>
+                    <span>minimal_23</span>
+                </div>
+            </div>
+
+            <!-- Posts Stream -->
+            <div class="posts-stream">
+                <article class="ig-post">
+                    <!-- Post Header -->
+                    <div class="post-header">
+                        <div class="post-author">
+                            <img src="https://picsum.photos/seed/user1/32" alt="Avatar">
+                            <span class="author-name">johndoe</span>
+                            <span class="dot-separator">•</span>
+                            <span class="post-time">2h</span>
+                        </div>
+                        <button class="options-btn"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+
+                    <!-- Post Media -->
+                    <div class="post-media">
+                        <img src="https://picsum.photos/seed/postcontent/600/600" alt="Post content">
+                    </div>
+
+                    <!-- Post Actions Footer -->
+                    <div class="post-body">
+                        <div class="action-icons">
+                            <div class="left-icons">
+                                <button class="icon-btn like-btn"><i class="fa-regular fa-heart"></i></button>
+                                <button class="icon-btn"><i class="fa-regular fa-comment"></i></button>
+                                <button class="icon-btn"><i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                            <button class="icon-btn"><i class="fa-regular fa-bookmark"></i></button>
+                        </div>
+                        
+                        <div class="likes-info">
+                            <span>Liked by <strong>techno_geek</strong> and <strong>442 others</strong></span>
+                        </div>
+
+                        <div class="caption-text">
+                            <span class="author-name">johndoe</span> Clean architecture and great vibes. 🚀
+                        </div>
+
+                        <div class="comments-preview">View all 24 comments</div>
+
+                        <div class="add-comment-box">
+                            <input type="text" placeholder="Add a comment...">
+                            <button class="comment-post-btn">Post</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Right Sidebar (Profile Switcher & Suggestions) -->
+        <aside class="right-sidebar">
+            <div class="profile-switcher">
+                <div class="profile-info">
+                    <img src="https://picsum.photos/seed/myprofile/56" alt="My Profile">
+                    <div class="handle-titles">
+                        <span class="main-handle">dev_explorer</span>
+                        <span class="sub-name">Developer</span>
+                    </div>
+                </div>
+                <button class="switch-action">Switch</button>
+            </div>
+
+            <div class="suggestions-pane">
+                <div class="pane-header">
+                    <span>Suggested for you</span>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+
+                <div class="suggestion-row">
+                    <div class="profile-info">
+                        <img src="https://picsum.photos/seed/sugg1/44" alt="Suggestion">
+                        <div class="handle-titles">
+                            <span class="main-handle">react_daily</span>
+                            <span class="sub-name">Followed by johndoe + 3 more</span>
+                        </div>
+                    </div>
+                    <button class="follow-action">Follow</button>
+                </div>
+            </div>
+            
+            <div class="meta-footer">
+                <p>About • Help • Press • API • Jobs • Privacy • Terms</p>
+                <p>© 2026 INSTAGRAM FROM META</p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
